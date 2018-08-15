@@ -1,0 +1,16 @@
+<ul>
+	<li>Title: {{ctx['book'].title}}</li>
+	<li>Author: {{ctx['book'].author}}</li>
+	<li>Publication year: {{ctx['book'].publication_year}}</li>
+	<li>ISBN: {{ctx['book'].isbn}}</li>
+	{% for review in ctx['reviews'] %}
+		<li>review
+			<ul>
+				<li>Name: {{session['username']}}</li>
+				<li>Review: {{review.review}}</li>
+				<li>Rating: {{review.rating}}</li>
+			</ul>
+		</li>
+	{% endfor %}
+	<li>Average rating: {{ctx['media']}} 
+</ul>

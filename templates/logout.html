@@ -1,0 +1,7 @@
+<h1>You are logged as {{username}}</h1>
+<p>You will loggout, are you sure?</p>
+<form action="{{ url_for('index') }}" method="post">
+    <div class="form-group">
+        <button class="btn btn-primary">Logout</button>
+    </div>
+</form>

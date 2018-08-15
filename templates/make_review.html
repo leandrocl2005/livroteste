@@ -1,0 +1,12 @@
+<h1>Hello {{session['username']}}</h1>
+
+<form id="review-form" action="{{ url_for('review_save', book_id=book_id) }}" method="POST">
+	<p>Rating</p>
+    <input type="number" id="rating" name="rating">
+    <br/>
+    <p>Review</p>
+    <textarea rows="4" cols="50" name="review">Enter text here...</textarea>
+    <br/>
+    <br/>
+    <input type="submit" id="submit-button">    
+</form>
